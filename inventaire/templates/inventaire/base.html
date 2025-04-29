@@ -1,0 +1,41 @@
+
+<html>
+
+ <head>
+  
+ <meta charset="utf-8">
+ <!-- importer le fichier de style -->
+ <link rel="stylesheet" href="static/inventaire/css/base.css" media="screen" type="text/css" />
+ <img src="static/inventaire/images/logo.png" id="logo">
+ </head>
+ 
+  <body>
+  
+    <nav id="example-5" >
+      <ul>
+        <li><a href="/" >Déconnexion</a></li>
+       
+      </ul>
+    </nav>
+
+ 
+<div style="margin-top: 10%;">
+  <form action="{% url 'inventaire' %}" method="GET">
+    <img src="static/inventaire/images/inventaire.jpeg " style="width:20%; margin-left: 20%;"><br>
+    <input type="submit"  value='Inventaire' style="margin-left: 25%; width: 10%;"  >
+  </form>
+ <div class="column" style="margin-left: 60%; margin-top: -18%;">
+  <form action="{% url 'incident' %}" method="GET">
+  <img src="static/inventaire/images/incident.JPG " style="width:55%; margin-right: 2%; "><br>
+  <input type="submit" value='Incident' style="width: 20%;  margin-top: 4%;margin-left: 19%;">
+  </form>
+ </div>
+</div>
+ </div>
+
+ <br>
+
+
+
+ </body>
+</html>

@@ -1,0 +1,115 @@
+
+<html>
+
+ <head>
+  
+ <meta charset="utf-8">
+ <!-- importer le fichier de style -->
+ <link rel="stylesheet" href="static/inventaire/css/inventaire.css" media="screen" type="text/css" />
+ <img src="static/inventaire/images/logo.png" id="logo" >
+ </head>
+ 
+  <body>
+  
+    <nav id="example-5" >
+      <ul>
+        <li id="inv"><a href="/inventaire">Inventaire</a></li>
+        <li><a href="/incident" >Incident</a></li>
+        <li><a href="/" >Déconnexion</a></li>
+                 
+      </ul>
+    </nav>
+    <a href="/ajouterinv" class="button" style="margin-left: 80%; margin-top: -5%;" target="_blank" >Ajouter un inventaire</a>
+    <div class="row" style="margin-left: 15%;">
+        <div class="column">
+          <form id="huaweiForm" method="get" action="{% url 'tableinventaire' %}">
+            <input type="hidden" name="marque" value="huawei">
+            <img id="huaweiImage" src="static/inventaire/images/huawei.png" style="width: 60%;margin-top: 12px;" alt="huawei Logo">
+        </form>
+        
+        <script>
+        document.getElementById("huaweiImage").addEventListener("click", function() {
+            document.getElementById("huaweiForm").submit();
+        });
+        </script>
+        </div>
+        <div class="column">
+          <form id="lenovoForm" method="get" action="{% url 'tableinventaire' %}">
+            <input type="hidden" name="marque" value="lenovo">
+            <img id="lenovoImage" src="static/inventaire/images/lenovo.png" style="width:50%" alt="Lenovo Logo">
+        </form>
+        
+        <script>
+        document.getElementById("lenovoImage").addEventListener("click", function() {
+            document.getElementById("lenovoForm").submit();
+        });
+        </script>
+        </div>
+        <div class="column">
+             <form id="dellForm" method="get" action="{% url 'tableinventaire' %}">
+            <input type="hidden" name="marque" value="dell">
+            <img id="dellImage" src="static/inventaire/images/dell.png" style="width:40%;margin-top: 7%;" alt="Dell Logo">
+        </form>
+        
+        <script>
+        document.getElementById("dellImage").addEventListener("click", function() {
+            document.getElementById("dellForm").submit();
+        });
+        </script>
+        </div>
+      </div>
+      <div class="row" style="margin-left:15%;">
+        <div class="column">
+          <form id="ciscoForm" method="get" action="{% url 'tableinventaire' %}">
+            <input type="hidden" name="marque" value="cisco">
+            <img id="ciscoImage" src="static/inventaire/images/cisco.png" style="width:40%;margin-top: 10%;" alt="cisco Logo">
+        </form>
+        
+        <script>
+        document.getElementById("ciscoImage").addEventListener("click", function() {
+            document.getElementById("ciscoForm").submit();
+        });
+        </script>
+        </div>
+        <div class="column">
+           <form id="hpForm" method="get" action="{% url 'tableinventaire' %}">
+            <input type="hidden" name="marque" value="hp">
+            <img id="hpImage" src="static/inventaire/images/hp.png" style="width:40%" alt="hp Logo">
+        </form>
+        
+        <script>
+        document.getElementById("hpImage").addEventListener("click", function() {
+            document.getElementById("hpForm").submit();
+        });
+        </script>
+        </div>
+        <div class="column">
+          <form id="ericssonForm" method="get" action="{% url 'tableinventaire' %}">
+            <input type="hidden" name="marque" value="ericsson">
+            <img id="ericssonImage" src="static/inventaire/images/ericsson.png" style="width:40%;margin-top: 8%;" alt="ericsson Logo">
+        </form>
+        
+        <script>
+        document.getElementById("ericssonImage").addEventListener("click", function() {
+            document.getElementById("ericssonForm").submit();
+        });
+        </script>
+        </div>
+      </div>
+      <div class="row" style="margin-left:15%;">
+        <div class="column">
+          <form id="jumperForm" method="get" action="{% url 'tableinventaire' %}">
+            <input type="hidden" name="marque" value="jumper">
+            <img id="jumperImage" src="static/inventaire/images/jumper.png" style="width:40%;margin-top: 20%;" alt="jumper Logo">
+        </form>
+        
+        <script>
+        document.getElementById("jumperImage").addEventListener("click", function() {
+            document.getElementById("jumperForm").submit();
+        });
+        </script>
+        </div>
+       
+      </div>
+ </body>
+</html>

@@ -1,0 +1,53 @@
+
+<html>
+
+ <head>
+  
+ <meta charset="utf-8">
+ <!-- importer le fichier de style -->
+ <link rel="stylesheet" href="static/inventaire/css/inventaire.css" media="screen" type="text/css" />
+ <img src="static/inventaire/images/logo.png" id="logo" >
+ </head>
+ 
+  <body>
+  
+    <nav id="example-5" >
+      <ul>
+       
+        <li id="inv"><a href="/inventaire">Inventaire</a></li>
+        <li><a href="/incident" >Incident</a></li>
+        <li><a href="/" >Déconnexion</a></li>
+                 
+      </ul>
+    </nav>
+    <form method="GET" action="{% url 'searchInc_by_sn' %}">
+      <input type="text" name="search_sn" placeholder="Enter numero de série" class="button" style="margin-left: 62%; margin-top: -5%;background-color: aliceblue;color: black;">
+      <button type="submit"  class="button" style="margin-left: 80%; margin-top: -5%; ">Chercher</button>
+  </form>
+      <table class="center">
+      
+        <h1 style="color: white;text-align: center;">Incidents</h1>
+        <thead>
+          <tr>
+              <th>SN</th>
+              <th>Dates des changements</th>
+              <th>Type</th>
+              <th>Application</th>
+              <th>Description du changement</th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for incident in incidents %}
+          <tr>
+              <td>{{ incident.SN }}</td>
+              <td>{{ incident.Date }}</td>
+              <td>{{ incident.Type }}</td>
+              <td>{{ incident.Application }}</td>
+              <td>{{ incident.Description }}</td>
+              
+          </tr>
+          {% endfor %}
+      </tbody>
+      </table>
+ </body>
+</html>

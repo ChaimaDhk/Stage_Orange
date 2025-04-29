@@ -1,0 +1,81 @@
+body{
+    background: #000000;
+   }
+   #container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+   }
+   /* Bordered form */
+   form {
+    width:100%;
+    padding: 30px;
+
+   }
+   #container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+   }
+   
+   /* Full-width inputs */
+   input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: rgb(210, 210, 210) ;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+   }
+   button[type=submit] {
+    background-color: #e35125;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 0 25% ;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+   }
+   button[type=submit]:hover {
+    background-color: white;
+    color: #e35125;
+    border: 1px solid #e35125;
+   }
+   /* Set a style for all buttons */
+   input[type=submit] {
+    background-color: #e35125;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 0 25% ;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+   }
+   input[type=submit]:hover {
+    background-color: white;
+    color: #e35125;
+    border: 1px solid #e35125;
+   }
+   input[type=reset] {
+    background-color: #e35125;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+   }
+   input[type=reset]:hover {
+    background-color: white;
+    color: #e35125;
+    border: 1px solid #e35125;
+   }
+   #creer{
+    color: white;
+    margin-left: 45%;
+
+   }
+   #logo{
+    width:8%;
+   }
